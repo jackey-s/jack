@@ -1,0 +1,56 @@
+#header > .logo {
+  width: 80%;
+  text-align: center;
+}
+#header > .logo > span {
+  font-size: 40px;
+  font-family: simsun;
+  display: block;
+  margin-top: -12px;
+  padding: 0;
+  float: left;
+  color: white;
+}
+#header > .logo > span a {
+  color: white;
+  font-family: simsun;
+}
+#header > .logo > p {
+  text-align: center;
+  float: left;
+  margin-left: 20%;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+}
+#baicai {
+  margin-top: 50px;
+  height: 30px;
+  overflow: hidden;
+}
+#baicai > .baicaiTop {
+  height: 30px;
+  top: 0;
+  left: 0;
+}
+#baicai > .baicaiTop li {
+  float: left;
+  margin: 0 25px;
+}
+#baicai > .baicaiTop li a {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+#baicai > .baicaiTop li a p {
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+}
+.mediaT {
+  background-color: #eeeeee;
+}
+.mediaT > .media {
+  margin-top: 5px;
+  background-color: #fff;
+}

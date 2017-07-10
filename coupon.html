@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--引入第三方框架UI-->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet/less" href="./css/base.css">
+    <link rel="stylesheet/less" href="./css/coupon.css">
+    <script type="text/javascript" src="./lib/less/less.js"></script>
+    <title>慢慢买</title>
+</head>
+<body>
+<!--头部-->
+<header id="header">
+    <div class="logo">
+        <span><a href="index.html"><</a></span>
+        <p>优惠券</p>
+    </div>
+    <div class="app">
+        <img src="./images/header_app.png" alt=""/>
+    </div>
+</header>
+<div class="picpic">
+    <ul class="ulul">
+    </ul>
+</div>
+<div class="youhui">
+    <p>首页>优惠券</p>
+</div>
+<!--商品推荐-->
+<section id="footer">
+
+    <div class="footer1">
+        <div class="denglu"><a href=""></a>登录</div>
+        <div class="zhuce"><a href=""></a>注册</div>
+        <div class="fanhui"><a href=""></a>返回顶部</div>
+    </div>
+    <div class="footer2">
+        <p class="p1"><a href="" class="shouji">手机APP下载</a>&nbsp;慢慢买手机版&nbsp;<a href="">--掌上比价平台</a></p>
+        <p class="p2">m.manmanbuy.com</p>
+    </div>
+</section>
+<script type="text/html" id="youHuiQuan">
+    {{each result as value}}
+    <a href="couponproduct.html?couponid={{value.couponId}}"><li><img src="{{#value.couponImg}}" alt=""/><p>{{value.couponTitle}}</p></li></a>
+    {{/each}}
+</script>
+<!--js文件 注意引入的依赖关系-->
+<script src="./js/jquery.js"></script>
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="./js/coupon.js"></script>
+<script src="./js/template.js"></script>
+</body>
+</html>

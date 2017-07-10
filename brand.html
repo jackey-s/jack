@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--引入第三方框架UI-->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet/less" href="./css/base.css">
+    <link rel="stylesheet/less" href="./css/brand.css">
+    <script type="text/javascript" src="./lib/less/less.js"></script>
+    <title>慢慢买</title>
+</head>
+<body>
+<!--头部-->
+<header id="header">
+    <div class="logo">
+        <img src="./images/header_logo.png" alt=""/>
+    </div>
+    <div class="app">
+        <img src="./images/header_app.png" alt=""/>
+    </div>
+</header>
+<!--搜索-->
+<section id="search">
+    <form action="" class="search-left">
+        <input type="text" placeholder="请输入你要比价的商品"/>
+    </form>
+    <a href="javascript:;" class="search-right">搜索</a>
+</section>
+<div class="productTop">
+    <ol class="breadcrumb">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="#">全部分类</a></li>
+    </ol>
+</div>
+<div class="remen">
+    <div class="remenIn">
+        <h4>平板电视哪个牌子好</h4>
+    </div>
+</div>
+<div class="title">
+
+</div>
+<div class="remenIn">
+    <h4>平板电视哪个牌子好</h4>
+</div>
+</div>
+<!--商品推荐-->
+<div class="reommen-in">
+
+</div>
+<div class="remenIn">
+    <h4 style="color:#be4f0f;">平板电视最新评论</h4>
+</div>
+<div class="brandDi">
+</div>
+<!--底部-->
+<section id="footer">
+
+    <div class="footer1">
+        <div class="denglu"><a href=""></a>登录</div>
+        <div class="zhuce"><a href=""></a>注册</div>
+        <div class="fanhui"><a href=""></a>返回顶部</div>
+    </div>
+    <div class="footer2">
+        <p class="p1"><a href="" class="shouji">手机APP下载</a>&nbsp;慢慢买手机版&nbsp;<a href="">--掌上比价平台</a></p>
+        <p class="p2">m.manmanbuy.com</p>
+    </div>
+</section>
+<script type="text/html" id="brabdD">
+    {{each result as value i}}
+    <div class="titleIn">
+    <a href="#">
+        <i>{{i+1}}</i><p>{{value.brandName}}</p>
+    </a>
+    <p class="bot">{{value.brandInfo}}</p>
+    <img src="images/down1.png" alt=""/>
+    </div>
+    {{/each}}
+</script>
+<script type="text/html" id="brandD2">
+    {{each result as value i}}
+    <div class="media">
+        <div class="media-left">
+            <a href="#">
+                {{#value.productImg}}
+            </a>
+        </div>
+        <div class="media-body">
+            <h5>{{value.productName}}</h5>
+            <p class="price">{{value.productPrice}}</p>
+            <span class="form">{{value.productQuote}}&nbsp;|&nbsp;{{value.productCom}}</span>
+            <!--<span class="comment"> <img src="images/aaa.svg" alt=""/>1</span>-->
+        </div>
+    </div>
+    {{/each}}
+</script>
+<script type="text/html" id="brandD3">
+    {{each result as value }}
+    <div class="pinglun">
+        <div class="tt">
+
+        </div>
+        <p class="aaaa"></p>
+        <div class="xing">
+            <p>{{value.comName}}:<span>★★★★★</span> <i>{{value.comTime}}</i></p>
+            <div class="kuang">
+                <p>{{value.comContent}}</p>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</script>
+<script src="./js/jquery.js"></script>
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="./js/brand.js"></script>
+<script src="./js/template.js"></script>
+
+</body>
+</html>

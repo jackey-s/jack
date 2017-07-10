@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--引入第三方框架UI-->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet/less" href="./css/base.css">
+    <link rel="stylesheet/less" href="./css/brandTitle.css">
+    <script type="text/javascript" src="./lib/less/less.js"></script>
+    <title>慢慢买</title>
+</head>
+<body>
+<!--头部-->
+<header id="header">
+    <div class="logo">
+        <img src="./images/header_logo.png" alt=""/>
+    </div>
+    <div class="app">
+        <img src="./images/header_app.png" alt=""/>
+    </div>
+</header>
+<!--搜索-->
+<section id="search">
+    <form action="" class="search-left">
+        <input type="text" placeholder="请输入你要比价的商品"/>
+    </form>
+    <a href="javascript:;" class="search-right">搜索</a>
+</section>
+<div class="productTop">
+    <ol class="breadcrumb">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="#">全部分类</a></li>
+    </ol>
+</div>
+<div class="remen">
+    <div class="remenIn">
+        <h4>热门品牌排行</h4>
+    </div>
+</div>
+    <ul class="brandin">
+    </ul>
+<!--底部-->
+
+<section id="footer">
+
+    <div class="footer1">
+        <div class="denglu"><a href=""></a>登录</div>
+        <div class="zhuce"><a href=""></a>注册</div>
+        <div class="fanhui"><a href=""></a>返回顶部</div>
+    </div>
+    <div class="footer2">
+        <p class="p1"><a href="" class="shouji">手机APP下载</a>&nbsp;慢慢买手机版&nbsp;<a href="">--掌上比价平台</a></p>
+        <p class="p2">m.manmanbuy.com</p>
+    </div>
+</section>
+<script type="text/html" id="brand">
+    {{each result as value}}
+    <li>
+        <a href="brand.html?brandTitleid={{value.brandTitleId}}"><p>{{value.brandTitle}} <img src="images/down1.png" alt=""/></p></a>
+    </li>
+    {{/each}}
+</script>
+<script src="./js/jquery.js"></script>
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="./js/brandTitle.js"></script>
+<script src="./js/template.js"></script>
+
+</body>
+</html>

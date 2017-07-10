@@ -1,0 +1,153 @@
+#header > .logo {
+  width: 80%;
+  text-align: center;
+}
+#header > .logo > span {
+  font-size: 40px;
+  font-family: simsun;
+  display: block;
+  margin-top: -12px;
+  padding: 0;
+  float: left;
+  color: white;
+}
+#header > .logo > span a {
+  color: white;
+}
+#header > .logo > p {
+  text-align: center;
+  float: left;
+  margin-left: 40%;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+}
+#headerTop {
+  margin-top: 60px;
+}
+#headerTop > h4 {
+  display: block;
+  margin-left: 20px;
+}
+#headerTop > .headerTitle {
+  margin-left: 20px;
+  color: #c0c0c0;
+  font-size: 12px;
+}
+#headerTop > .areaArea {
+  width: 100%;
+  overflow: hidden;
+}
+#headerTop > .areaArea > .areaLeft {
+  width: 40%;
+  float: left;
+  margin-left: 20px;
+}
+#headerTop > .areaArea > .areaLeft > ul > li {
+  border-bottom: 1px dashed #cccccc;
+}
+#headerTop > .areaArea > .areaLeft > ul > li > a {
+  display: block;
+}
+#headerTop > .areaArea > .areaLeft > ul > li > a > span {
+  display: block;
+  margin-left: 20px;
+}
+#headerTop > .areaArea > .areaLeft > ul > li > a > span > strong {
+  float: right;
+  margin-right: 20px;
+  color: orangered;
+}
+#headerTop > .areaArea > .areaRight {
+  float: right;
+  text-align: center;
+  width: 50%;
+}
+#headerTop > .areaArea > .areaRight > img {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+}
+#headerTop > .areaArea > .areaRight > .wenzi > p {
+  display: block;
+}
+#headerTop > .pic img {
+  display: block;
+  margin-left: 50%;
+  transform: translate(-50%);
+  width: 300px;
+  height: 300px;
+}
+#headerTop > .goBuy {
+  width: 80%;
+  background-color: orangered;
+  height: 40px;
+  margin-left: 10%;
+}
+#headerTop > .goBuy > p {
+  display: block;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  color: #FFFFFF;
+  margin-top: 20px;
+}
+#headerTop > .weiXin {
+  margin-top: 30px;
+}
+#headerTop > .weiXin > img {
+  display: block;
+  width: 90%;
+  margin-left: 5%;
+}
+#headerTop > .cu-content-pl > .tit {
+  font-size: 16px;
+  text-indent: 10px;
+}
+#headerTop > .cu-content-pl > .reply > .form > textarea {
+  margin-left: 2%;
+  resize: none;
+  height: 100px;
+}
+#headerTop > .cu-content-pl > .reply > .form > .ctrl {
+  margin-top: -5px;
+  overflow: hidden;
+  width: 95%;
+  margin-left: 2%;
+  height: 40px;
+  background-color: #eeeeee;
+}
+#headerTop > .cu-content-pl > .reply > .form > .ctrl > input {
+  float: right;
+  height: 40px;
+  line-height: 40px;
+  background-color: coral;
+  width: 100px;
+  border: 0;
+}
+#headerTop > .cu-content-pl > .list > ul > li > .userimg > img {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#headerTop > .cu-content-pl > .list > ul > li > .con {
+  margin-bottom: 30px;
+}
+#headerTop > .cu-content-pl > .list > ul > li > .con > .name {
+  margin-bottom: 0px;
+}
+#headerTop > .cu-content-pl > .list > ul > li > .con > .name > .username {
+  float: left;
+}
+#headerTop > .cu-content-pl > .list > ul > li > .con > .name > .time {
+  float: right;
+  margin-right: 10px;
+}
+#headerTop > .cu-content-pl > .list > ul > li > .con > .content {
+  margin-left: 50px;
+  margin-top: -20px;
+}

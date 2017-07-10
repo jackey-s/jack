@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--引入第三方框架UI-->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet/less" href="./css/base.css">
+    <link rel="stylesheet/less" href="./css/index.css">
+    <script type="text/javascript" src="./lib/less/less.js"></script>
+    <title>慢慢买</title>
+</head>
+<body>
+    <!--头部-->
+    <header id="header">
+      <div class="logo">
+          <img src="./images/header_logo.png" alt=""/>
+      </div>
+      <div class="app">
+          <img src="./images/header_app.png" alt=""/>
+      </div>
+    </header>
+    <!--搜索-->
+    <section id="search">
+        <form action="" class="search-left">
+            <input type="text" placeholder="请输入你要比价的商品"/>
+        </form>
+        <a href="javascript:;" class="search-right">搜索</a>
+    </section>
+    <!--菜单-->
+    <section id="menu">
+
+    </section>
+    <!--商品推荐-->
+    <section id="recommen">
+        <div class="sole">
+            <h2>超值折扣推荐</h2>
+            <div class="arc">
+                <span>></span>
+            </div>
+        </div>
+        <div class="reommen-in">
+        </div>
+        <div class="more">
+            <a href="#"><p>更多优惠信息>></p></a>
+        </div>
+    </section>
+    <!--底部-->
+    <div class="sole">
+            <h2>品牌排行</h2>
+            <div class="arc">
+                <span>></span>
+            </div>
+        </div>
+    <section id="footer">
+
+        <div class="footer1">
+            <div class="denglu"><a href=""></a>登录</div>
+            <div class="zhuce"><a href=""></a>注册</div>
+            <div class="fanhui"><a href=""></a>返回顶部</div>
+        </div>
+        <div class="footer2">
+            <p class="p1"><a href="" class="shouji">手机APP下载</a>&nbsp;慢慢买手机版&nbsp;<a href="">--掌上比价平台</a></p>
+            <p class="p2">m.manmanbuy.com</p>
+        </div>
+    </section>
+
+    <script type="text/html" id="menu1">
+        <div class="row">
+            {{each result as value i}}
+            <div class="col-xs-3">
+                <a href="{{value.titlehref
+                }}">
+                    {{#value.img}}
+                    <p>{{value.name}}</p>
+                </a>
+            </div>
+            {{/each}}
+        </div>
+    </script>
+    <script type="text/html" id="comment">
+        {{each result as value i}}
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    {{#value.productImgSm}}
+                </a>
+            </div>
+            <div class="media-body">
+                <h5>{{value.productName}}</h5>
+                <p class="price">{{value.productPinkage}}</p>
+                <span class="form">{{value.productFrom}}&nbsp;|&nbsp;{{value.productTime}}</span>
+                <span class="comment">
+                    <img src="images/aaa.svg" alt=""/>
+                    {{value.productComCount}}
+                </span>
+            </div>
+        </div>
+        {{/each}}
+</script>
+    <!--js文件 注意引入的依赖关系-->
+    <script src="./js/jquery.js"></script>
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/template.js"></script>
+</body>
+</html>

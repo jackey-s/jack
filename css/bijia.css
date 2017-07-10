@@ -1,0 +1,164 @@
+#product {
+  margin-top: 110px;
+}
+#product > .productTop {
+  overflow: hidden;
+}
+#product > .productTop > .breadcrumb {
+  width: 100%;
+}
+#product > .productTop > .breadcrumb > .btn-default {
+  margin-right: 10px;
+  margin-top: -5px;
+  width: 50px;
+  height: 30px;
+  float: right;
+}
+#bijia > .bijia-Top > .top1 > h4 {
+  display: block;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+}
+#bijia > .bijia-Top > .top1 > .top2 {
+  height: 100%;
+}
+#bijia > .bijia-Top > .top1 > .top2 > a {
+  display: block;
+}
+#bijia > .bijia-Top > .top1 > .top2 > a > img {
+  margin-left: 50%;
+  margin-top: 20px;
+  transform: translate(-50%);
+  width: 170px;
+  height: 130px;
+}
+#bijia > .bijia-Top > .top1 > .top2 > .yuan {
+  width: 40px;
+  height: 40px;
+  background-color: limegreen;
+  position: absolute;
+  right: 30px;
+  border-radius: 20px;
+}
+#bijia > .bijia-Top > .top1 > .top2 > .yuan > h5 {
+  text-align: center;
+  color: white;
+}
+#bijia > .bijia-Top > .top1 > .row {
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#bijia > .bijia-Top > .top1 > .row > .col1 {
+  height: 40px;
+  background-color: #FF9C1B;
+}
+#bijia > .bijia-Top > .top1 > .row > .col1 > p {
+  font-size: 15px;
+  height: 40px;
+  line-height: 40px;
+}
+#bijia > .bijia-Top > .top1 > .row > .col2 {
+  height: 40px;
+  background-color: #FFCA39;
+}
+#bijia > .bijia-Top > .top1 > .row > .col2 > p {
+  font-size: 15px;
+  height: 40px;
+  line-height: 40px;
+}
+#bijia > .bijia-Top > .top1 > .row > .col3 {
+  height: 40px;
+  background-color: #FFC320;
+}
+#bijia > .bijia-Top > .top1 > .row > .col3 > p {
+  font-size: 15px;
+  height: 40px;
+  line-height: 40px;
+}
+#bijia > .bijia-Top > .top1 > .top3 {
+  float: left;
+  padding-top: 15px;
+  height: 50px;
+  width: 100%;
+  border-bottom: 1px solid #cccccc;
+}
+#bijia > .bijia-Top > .top1 > .top3 > img {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  line-height: 20px;
+}
+#bijia > .bijia-Top > .top1 > .top3 > p {
+  text-indent: 10px;
+  float: left;
+}
+#bijia > .bijia-Top > .top1 > .top3 > .price {
+  float: right;
+}
+#bijia > .bijia-Top > .top1 > .top3 > h5 {
+  width: 60px;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 10px;
+  float: right;
+  text-align: center;
+  background-color: orangered;
+  margin-top: -5px;
+  margin-left: 10px;
+}
+#bijia > .bijia-Top > .top1 > .top4 {
+  height: 60px;
+  border-bottom: 1px solid #cccccc;
+}
+#bijia > .bijia-Top > .top1 > .top4 > h5 {
+  font-size: 12px;
+  color: #c0c0c0;
+  text-indent: 10px;
+  text-align: center;
+  height: 20px;
+  line-height: 20px;
+}
+#bijia > .bijia-Top > .top1 > .top5 {
+  height: 40px;
+  background-color: #eeeeee;
+}
+#bijia > .bijia-Top > .top1 > .top5 > h5 {
+  font-size: 16px;
+  height: 35px;
+  line-height: 35px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+#bijia > .bijia-Top > .top1 > .top6 > .topIn {
+  color: #c0c0c0;
+  height: 20px;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+#bijia > .bijia-Top > .top1 > .top6 > .topIn > .name {
+  float: left;
+}
+#bijia > .bijia-Top > .top1 > .top6 > .topIn > .data {
+  font-size: 12px;
+  float: right;
+}
+#bijia > .bijia-Top > .top1 > .top6 > .from {
+  overflow: hidden;
+}
+#bijia > .bijia-Top > .top1 > .top6 > .from > .fromIn {
+  color: #c0c0c0;
+  font-size: 12px;
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+#bijia > .bijia-Top > .top1 > .top6 > .content {
+  margin-left: 10px;
+  margin-right: 10px;
+}

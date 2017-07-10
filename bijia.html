@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--引入第三方框架UI-->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet/less" href="./css/base.css">
+    <link rel="stylesheet/less" href="./css/bijia.css">
+    <script type="text/javascript" src="./lib/less/less.js"></script>
+    <title>慢慢买</title>
+</head>
+<body>
+<!--头部-->
+<header id="header">
+    <div class="logo">
+        <img src="./images/header_logo.png" alt=""/>
+    </div>
+    <div class="app">
+        <img src="./images/header_app.png" alt=""/>
+    </div>
+</header>
+<!--搜索-->
+<section id="search">
+    <form action="" class="search-left">
+        <input type="text" placeholder="请输入你要比价的商品"/>
+    </form>
+    <a href="javascript:;" class="search-right">搜索</a>
+</section>
+<section id="product">
+    <div class="productTop">
+        <ol class="breadcrumb">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="category.html">电视</a></li>
+            <li class="active"></li>
+            <a class="btn btn-default" href="#" role="button">筛选</a>
+        </ol>
+
+    </div>
+    <div class="product-in">
+
+    </div>
+
+</section>
+<section id="bijia">
+    <div class="bijia-Top">
+        <div class="top1">
+            <h4>乐视TV多打 的    的啊 啊啊啊啊乐视TV多打 的    的啊 啊啊 啊多打 的    的啊打 的    的啊 啊啊啊啊 啊多打 的    的啊</h4>
+            <div class="top2">
+                <a href=""><img src="images/ic_bcj.png" alt=""/></a>
+                <div class="yuan">
+                    <h5>收藏</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4 col1">
+                    <p>比价购买</p>
+                </div>
+                <div class="col-xs-4 col2">
+                    <p>产品参数</p>
+                </div>
+                <div class="col-xs-4 col3">
+                    <p>评价(998)</p>
+                </div>
+            </div>
+            <div class="top3">
+                <img src="images/jingdong.png" alt=""/>
+                <p>京东商城</p>
+                <h5>去购买</h5>
+                <p class="price">￥998</p>
+            </div>
+            <div class="top4">
+                <h5>*实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。</h5>
+            </div>
+            <div class="top5">
+                <h5>网友评价</h5>
+            </div>
+            <div class="top6">
+                <div class="topIn">
+                    <p class="name">sgsgwew</p>
+                    <p class="data">2016/10/10</p>
+                </div>
+                <div class="from">
+                    <p class="fromIn">
+                        购买自:京东商城
+                    </p>
+                </div>
+                <div class="content">
+                    <p>昂科威很大空间发哈空间发客服咖啡机爱喝咖啡咖啡哈尽快发货看法扣分啊咖啡哈客服哈发客服哈啊咖啡哈啊咖啡哈扣分啊咖啡哈艾克发客服哈咖啡啊咖啡哈卡复活卡复活按客户反馈发哈客服哈啊咖啡哈啊咖啡哈艾克艾克看夸我等哈客户发卡号发卡看</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="more">
+    <a href="#"><p>更多评价信息>></p></a>
+</div>
+<!--底部-->
+<section id="footer">
+
+    <div class="footer1">
+        <div class="denglu"><a href="#">登录</a></div>
+        <div class="zhuce"><a href="#">注册</a></div>
+        <div class="fanhui"><a href="#">返回顶部</a></div>
+    </div>
+    <div class="footer2">
+        <p class="p1"><a href="" class="shouji">手机APP下载</a>&nbsp;慢慢买手机版&nbsp;<a href="">--掌上比价平台</a></p>
+        <p class="p2">m.manmanbuy.com</p>
+    </div>
+</section>
+<script type="text/html" id="productTmp">
+    {{each result as value i}}
+    <li class="active">{{value.category}}</li>
+    {{/each}}
+</script>
+<script type="text/html" id="bijiaTmp">
+    {{each result as value i}}
+    <div class="top1">
+        <h4>{{value.productName}}</h4>
+        <div class="top2">
+            <a href="">{{#value.productImg}}</a>
+            <div class="yuan">
+                <h5>收藏</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4 col1">
+                <p>比价购买</p>
+            </div>
+            <div class="col-xs-4 col2">
+                <p>产品参数</p>
+            </div>
+            <div class="col-xs-4 col3">
+                <p>评价(998)</p>
+            </div>
+        </div>
+        {{#value.bjShop}}
+        <!--<div class="top3">-->
+            <!--<img src="images/jingdong.png" alt=""/>-->
+            <!--<p>京东商城</p>-->
+            <!--<h5>去购买</h5>-->
+            <!--<p class="price">￥998</p>-->
+        <!--</div>-->
+        <div class="top4">
+
+            <h5>*商品比价的啊是的啊商品比价的啊是的啊商品比价的啊是的啊商品比价的啊是的啊商品比价的啊是的啊</h5>
+        </div>
+        <div class="top5">
+            <h5>网友评价</h5>
+        </div>
+        <div class="top6">
+
+        </div>
+
+    </div>
+    {{/each}}
+</script>
+<script type="text/html" id="pingJiaTmp">
+        {{each result as value i}}
+            <div class="topIn">
+                <p class="name">{{value.comName}}</p>
+                <p class="data">{{value.comTime}}</p>
+            </div>
+            <div class="from">
+                <p class="fromIn">
+                    {{value.comFrom}}
+                </p>
+            </div>
+            <div class="content">
+                <p>{{value.comContent}}</p>
+            </div>
+        {{/each}}
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="./js/template.js"></script>
+<script src="./js/bijia.js"></script>
+</body>
+</html>

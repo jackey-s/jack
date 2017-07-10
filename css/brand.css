@@ -1,0 +1,73 @@
+.productTop {
+  margin-top: 110px;
+}
+.remen .remenIn {
+  margin: 10px auto;
+  height: 40px;
+  background-color: whitesmoke;
+}
+.remen .remenIn h4 {
+  font-size: 16px;
+  color: #F59D56;
+  margin-top: 10px;
+  line-height: 40px;
+  text-indent: 1em;
+}
+.title {
+  overflow: hidden;
+}
+.title > .titleIn {
+  width: 100%;
+  height: 50px;
+}
+.title > .titleIn a {
+  float: left;
+}
+.title > .titleIn a i {
+  margin-left: 10px;
+  color: #FFFFFF;
+  float: left;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  background-color: red;
+}
+.title > .titleIn a > p {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+  float: left;
+  height: 30px;
+}
+.title > .titleIn .bot {
+  float: left;
+  margin-left: -80px;
+  margin-top: 20px;
+  color: #cccccc;
+}
+.title > .titleIn img {
+  float: right;
+  margin-top: 10px;
+}
+.brandDi .pinglun > .aaaa {
+  margin-left: 110px;
+  margin-top: -50px;
+}
+.brandDi .pinglun > .xing {
+  background-color: #cccccc;
+}
+.brandDi .pinglun > .xing p span {
+  color: orangered;
+  font-size: 20px;
+  margin-left: 10px;
+}
+.brandDi .pinglun > .xing p i {
+  float: right;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.kuang {
+  border: 1px solid #cccccc;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--引入第三方框架UI-->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet/less" href="./css/base.css">
+    <link rel="stylesheet/less" href="./css/baicaijia.css">
+    <script type="text/javascript" src="./lib/less/less.js"></script>
+    <title>慢慢买</title>
+</head>
+<body>
+<!--头部-->
+<header id="header">
+    <div class="logo">
+        <span><a href="index.html"><</a></span>
+        <p>白菜价-淘宝内部卷</p>
+    </div>
+    <div class="app">
+        <img src="./images/header_app.png" alt=""/>
+    </div>
+</header>
+<section id="baicai" class="clearfax">
+    <ul class="baicaiTop">
+        <script type="text/html" id="adLi">
+            {{each result as value i}}
+                <li pp={{value.titleId}}><a href="#"><p>{{value.title}}</p></a></li>
+            {{/each}}
+        </script>
+    </ul>
+</section>
+<div class="mediaT">
+
+</div>
+<section id="footer">
+
+    <div class="footer1">
+        <div class="denglu"><a href=""></a>登录</div>
+        <div class="zhuce"><a href=""></a>注册</div>
+        <div class="fanhui"><a href=""></a>返回顶部</div>
+    </div>
+    <div class="footer2">
+        <p class="p1"><a href="" class="shouji">手机APP下载</a>&nbsp;慢慢买手机版&nbsp;<a href="">--掌上比价平台</a></p>
+        <p class="p2">m.manmanbuy.com</p>
+    </div>
+</section>
+
+
+<!--js文件 注意引入的依赖关系-->
+<script src="./js/jquery.js"></script>
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="./js/iscroll.js"></script>
+<script src="./js/baicaijia.js"></script>
+<script src="./js/template.js"></script>
+<script type="text/html" id="zhongZ">
+    {{each result as value i}}
+    <div class="media">
+        <div class="media-left">
+            {{#value.productImg}}
+        </div>
+        <div class="media-body">
+            <h5>{{#value.productName}}</h5>
+            <p class="price">{{#value.productPrice}}</p>
+
+            <span class="form">{{#value.productCoupon}}</span>
+            {{#value.productHref}}<br />
+        </div>
+    </div>
+    {{/each}}
+
+</script>
+</body>
+</html>

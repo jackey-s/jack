@@ -1,0 +1,71 @@
+#header > .logo {
+  width: 80%;
+  text-align: center;
+}
+#header > .logo > span {
+  font-size: 40px;
+  font-family: simsun;
+  display: block;
+  margin-top: -12px;
+  padding: 0;
+  float: left;
+  color: white;
+}
+#header > .logo > span a {
+  color: white;
+  font-family: simsun;
+}
+#header > .logo > p {
+  text-align: center;
+  float: left;
+  margin-left: 40%;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.xiala {
+  height: 30px;
+  margin-top: 50px;
+}
+.xiala .dropdown {
+  float: left;
+  width: 30%;
+}
+.xiala .dropdown ul {
+  width: 100%;
+  min-width: 200px;
+}
+.xiala .dropdown ul li {
+  width: 100%;
+}
+.coudan > .row {
+  background-color: #cccccc;
+}
+.coudan > .row > .col-xs-6 {
+  width: 48%;
+  background-color: #fff;
+  margin: 0 0 5px 5px;
+}
+.coudan > .row > .col-xs-6 > .quan {
+  width: 100%;
+}
+.coudan > .row > .col-xs-6 > .quan > img {
+  display: block;
+  height: 100px;
+  margin-left: 25%;
+}
+.coudan > .row > .col-xs-6 > .quan > h5 {
+  margin-left: 10px;
+  height: 44px;
+}
+.coudan > .row > .col-xs-6 > .quan > p {
+  font-size: 25px;
+  color: red;
+}
+.coudan > .row > .col-xs-6 > .quan > a {
+  float: right;
+}
+.coudan > .row > .col-xs-6 > .quan > a button {
+  background-color: orangered;
+  margin-top: -70px;
+}

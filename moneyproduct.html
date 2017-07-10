@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--引入第三方框架UI-->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet/less" href="./css/base.css">
+    <link rel="stylesheet/less" href="./css/moneyproduct.css">
+    <script type="text/javascript" src="./lib/less/less.js"></script>
+    <title>慢慢买</title>
+</head>
+<body>
+<!--头部-->
+<header id="header">
+    <div class="logo">
+        <span><a href="moneyctrl.html"><</a></span>
+        <p>国内折扣</p>
+    </div>
+    <div class="app">
+        <img src="./images/header_app.png" alt=""/>
+    </div>
+</header>
+<section id="headerTop">
+    <h4>移动端凑单品:海天 鲜味 生抽 999L</h4>
+    <div class="headerTitle">
+<p class="jingDong"><e>京东商城</e>&nbsp;&nbsp;<i>10-25 14：10</i>&nbsp; &nbsp;&nbsp;<span>小编烟火/慢慢买</span></p>
+    </div>
+    <div class="areaArea" >
+        <div class="areaLeft">
+            <ul>
+i>
+                <li>10</li>
+            </ul>
+        </div>
+        <div class="areaRight">
+            <img src="images/ic_bcj.png" alt=""/>
+            <div class="wenzi">
+                <p>宋海天的金标生抽酱油，采用了非转基因大豆以及小麦发酵而成，而自然鲜的口感是有些鲜甜鲜甜的感觉，非常适合用来作为日常炒菜用的调味料，当然也能用作白切系列的蘸酱调料，相信吃过美味鲜的慢友们都了解的。</p>
+            </div>
+        </div>
+    </div>
+    <div class="pic">
+        <img src="images/ic_bcj.png" alt=""/>
+    </div>
+    <div class="goBuy">
+        <p>前往购买</p>
+    </div>
+    <div class="weiXin">
+        <img src="images/mmbweixin2.png" alt=""/>
+    </div>
+
+</section>
+
+<section id="footer">
+
+    <div class="footer1">
+        <div class="denglu"><a href=""></a>登录</div>
+        <div class="zhuce"><a href=""></a>注册</div>
+        <div class="fanhui"><a href=""></a>返回顶部</div>
+    </div>
+    <div class="footer2">
+        <p class="p1"><a href="" class="shouji">手机APP下载</a>&nbsp;慢慢买手机版&nbsp;<a href="">--掌上比价平台</a></p>
+        <p class="p2">m.manmanbuy.com</p>
+    </div>
+</section>
+<script type="text/html" id="moneyProduct">
+        {{each result as value i}}
+        <h4>{{value.productName}}</h4>
+        <div class="headerTitle">
+            <p class="jingDong"><e>{{value.productFrom}}</e>&nbsp;&nbsp;<i>{{value.productTime}}</i>&nbsp; &nbsp;&nbsp;<span>{{value.productTips}}</span></p>
+        </div>
+        <div class="areaArea" >
+            <div class="areaLeft">
+                {{#value.productCity}}
+            </div>
+            <div class="areaRight">
+                {{#value.productImgSm}}
+                <div class="wenzi">
+                    <p>{{value.productInfo2}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="pic">
+            {{#value.productImg2}}
+        </div>
+        <div class="goBuy">
+            <p>前往购买</p>
+        </div>
+        <div class="weiXin">
+            <img src="images/mmbweixin2.png" alt=""/>
+        </div>
+        {{#value.productComment}}
+        {{/each}}
+</script>
+<!--js文件 注意引入的依赖关系-->
+<script src="./js/jquery.js"></script>
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="./js/moneyproduct.js"></script>
+<script src="./js/template.js"></script>
+</body>
+</html>
